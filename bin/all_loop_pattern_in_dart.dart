@@ -46,14 +46,49 @@ class AllLoopPatternInDart {
       counter--;
     }
   }
+
+  /// now we are going to get the same output using do-while loop
+  /// what is the speciality of do-while loop?
+  /// it starts execution first and then it checks the condition
+  /// let's see how it works
+  ///
+  void increaseValueUsingDoWhileLoop() {
+    var counter = 0;
+    do {
+      print(counter);
+      counter++;
+    } while (counter <= 5);
+  }
+
+  /// let us decrease the value same way
+  ///
+  void decreaseValueUsingDoWhileLoop() {
+    var counter = 5;
+    do {
+      print(counter);
+      counter--;
+    } while (counter >= 0);
+  }
 }
 
 ///
 
 void main(List<String> args) {
-  var anInstanceOfForLoop = AllLoopPatternInDart();
+  // var anInstanceOfForLoop = AllLoopPatternInDart();
   // anInstanceOfForLoop.learnForLoop();
-  var anInstanceOfWhileLoop = AllLoopPatternInDart();
-  anInstanceOfForLoop.increaseValueUsingWhileLoop();
-  anInstanceOfWhileLoop.decreaseValueUsingWhileLoop();
+  //var anInstanceOfWhileLoop = AllLoopPatternInDart();
+  // anInstanceOfForLoop.increaseValueUsingWhileLoop();
+  // anInstanceOfWhileLoop.decreaseValueUsingWhileLoop();
+  var anInstanceOfDoWhileLoop = AllLoopPatternInDart();
+  //anInstanceOfDoWhileLoop.increaseValueUsingDoWhileLoop();
+  anInstanceOfDoWhileLoop.decreaseValueUsingDoWhileLoop();
 }
+/**
+ * 5
+4
+3
+2
+1
+0
+this is output the value is decreasing this time
+ */
