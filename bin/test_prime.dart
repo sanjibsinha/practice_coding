@@ -34,5 +34,5 @@ class TestPrime {
 
 void main(List<String> args) {
   var anInstance = TestPrime();
-  anInstance.testPrime(7);
+  anInstance.testPrime(17);
 }
