@@ -1,15 +1,13 @@
+import 'dart:math';
+
 class VolumeFinding {
-  void findVolume(int n) {
-    var m = n;
-    for (var i = 0; i <= 4; i++) {
-      var j = i * i;
-      m = j * i;
-    }
-    print('When each edge is $n the volume is: $m');
+  void getVolume(int vol) {
+    var result = pow(vol, 3);
+    print('The volume of any cuboid with edge $vol is: $result');
   }
 }
 
 void main(List<String> args) {
   var a = VolumeFinding();
-  a.findVolume(5);
+  a.getVolume(5);
 }
