@@ -14,5 +14,5 @@ class HCFOfTwoNumbers {
 
 void main(List<String> args) {
   var o = HCFOfTwoNumbers();
-  print(o.findHCF(24, 36));
+  print(o.findHCF(12, 6));
 }
