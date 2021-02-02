@@ -1,3 +1,5 @@
+import 'dart:math';
+
 /// prime numbers are numbers that have only two factors
 /// the number itself, and 1
 ///
@@ -11,7 +13,7 @@ class TestPrime {
   int factors = 0;
   void testPrime(int testPrime) {
     end = testPrime;
-    for (start; start <= end; start++) {
+    for (start; start <= sqrt(end); start++) {
       if (end % start == 0) {
         factors++;
       }
