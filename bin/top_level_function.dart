@@ -1,4 +1,4 @@
-/// top level functions
+/// top level scope
 dynamic funcOne(var x, var y) {
   return x + y;
 }
@@ -25,3 +25,11 @@ void main(List<String> args) {
   var obj3 = bar().title;
   print(obj2 + ' adding ' + obj3);
 }
+
+/**
+ * output:
+ * Hello world!
+25
+Foo
+Foo adding Bar
+ */
